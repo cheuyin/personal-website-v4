@@ -1,4 +1,6 @@
 import Image from "next/image";
+import SocialMediaLink from "./components/social-media-link";
+import { SiX } from "react-icons/si";
 
 export default function Home() {
     return (
@@ -24,7 +26,10 @@ export default function Home() {
                     </div>
                 </header>
                 <section>
-                    <h2 className="text-2xl">Connect With Me</h2>
+                    <h2 className="text-2xl font-semibold">Connect With Me</h2>
+                    <div>
+                        <SocialMediaLink Icon={SiX} title="X.com" />
+                    </div>
                 </section>
             </main>
         </div>
