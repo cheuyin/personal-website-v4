@@ -84,6 +84,12 @@ export default function Home() {
                         />
                     </div>
                 </section>
+                <section>
+                    <h2 className="text-2xl font-semibold mb-4">Education</h2>
+                    <p>The University of British Columbia</p>
+                    <p>B.Sc in Computer Science</p>
+                    <p>Sep. 2022 - May. 2027</p>
+                </section>
             </main>
         </div>
     );
