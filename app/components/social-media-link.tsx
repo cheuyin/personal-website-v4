@@ -1,14 +1,15 @@
 export default function SocialMediaLink({
     Icon,
-    title,
+    url,
 }: {
     Icon: React.ElementType;
-    title: string;
+    url: string;
 }) {
     return (
-        <div className="flex items-center">
-            <Icon color="white" width={50} height={50} />
-            <p>{title}</p>
-        </div>
+        <a href={url} target="_blank">
+            <div className="flex w-fit p-3 items-center rounded-xl outline border-solid">
+                <Icon color="white" size={20} />
+            </div>
+        </a>
     );
 }

@@ -1,6 +1,8 @@
 import Image from "next/image";
 import SocialMediaLink from "./components/social-media-link";
 import { SiX } from "react-icons/si";
+import { SiUpwork } from "react-icons/si";
+import { SiGithub } from "react-icons/si";
 
 export default function Home() {
     return (
@@ -26,9 +28,22 @@ export default function Home() {
                     </div>
                 </header>
                 <section>
-                    <h2 className="text-2xl font-semibold">Connect With Me</h2>
-                    <div>
-                        <SocialMediaLink Icon={SiX} title="X.com" />
+                    <h2 className="text-2xl font-semibold mb-4">
+                        Connect With Me
+                    </h2>
+                    <div className="flex gap-8">
+                        <SocialMediaLink
+                            Icon={SiX}
+                            url="https://x.com/scheung2104"
+                        />
+                        <SocialMediaLink
+                            Icon={SiUpwork}
+                            url="https://www.upwork.com/freelancers/~015ad57974e939c459?viewMode=1"
+                        />
+                        <SocialMediaLink
+                            Icon={SiGithub}
+                            url="https://github.com/cheuyin"
+                        />
                     </div>
                 </section>
             </main>
